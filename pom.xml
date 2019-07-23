@@ -6,7 +6,31 @@
 
     <groupId>org.jrx</groupId>
     <artifactId>java-interpreter-comparison</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>jshell-example</module>
+        <module>beanshell-example-parent</module>
+        <module>kotlin-example</module>
+        <module>groovy-example</module>
+    </modules>
 
-
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.8.1</version>
+                    <configuration>
+                        <release>11</release>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>

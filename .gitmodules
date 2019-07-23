@@ -1,0 +1,3 @@
+[submodule "beanshell-example-parent/beanshell"]
+	path = beanshell-example-parent/beanshell
+	url = https://github.com/beanshell/beanshell.git
